@@ -10,7 +10,7 @@ services:
 before_install:
   - sudo service postgresql stop
   - docker-compose -f prisma/docker-compose.yml up -d
-  - docker ps
   - sleep 20
+  - docker ps
 before_script:
   - yarn prisma deploy
