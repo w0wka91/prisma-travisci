@@ -10,4 +10,6 @@ services:
 before_install:
   - docker-compose -f ./prisma/docker-compose-yml up -d
   - docker ps
-  - docker run carlad/sinatra /bin/sh -c "cd /root/sinatra; bundle exec rake test"
+  - sleep 20
+before_script:
+  - yarn prisma deploy
