@@ -12,5 +12,6 @@ before_install:
   - docker-compose -f prisma/docker-compose.yml up -d
   - sleep 20
   - docker ps
-before_script:
+script:
   - yarn prisma deploy
+  - yarn test
