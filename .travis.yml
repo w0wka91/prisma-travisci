@@ -13,5 +13,5 @@ before_install:
   - sleep 20
   - docker ps
 script:
-  - yarn prisma deploy
+  - ./node_modules/.bin/prisma deploy
   - yarn test
