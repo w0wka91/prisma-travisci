@@ -13,6 +13,5 @@ before_install:
   - sleep 20
   - docker ps
 before_script:
-  - npm install -g prisma
+  - yarn global add prisma
   - cd prisma && prisma deploy
-  - curl -I http://localhost:4466/travisci/test
