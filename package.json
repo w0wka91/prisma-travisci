@@ -5,7 +5,7 @@
   "author": "Waldemar Penner",
   "license": "MIT",
   "scripts": {
-    "test": "jest --forceExit --detectOpenHandles",
+    "test": "jest --forceExit --detectOpenHandles"
   },
   "devDependencies": {
     "jest": "^23.6.0",
