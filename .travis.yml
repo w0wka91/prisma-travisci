@@ -12,6 +12,7 @@ before_install:
 install:
   - yarn install
 before_script:
-  - cd prisma && npx prisma deploy
+  - yarn global add prisma
+  - cd prisma && prisma deploy
 script:
   - yarn test
