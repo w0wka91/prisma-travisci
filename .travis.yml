@@ -9,10 +9,10 @@ before_install:
   - docker-compose -f prisma/docker-compose.yml up -d
   - sleep 20
   - docker ps
+install:
+  - yarn install
 before_script:
   - yarn global add prisma
   - cd prisma && prisma deploy
-install:
-  - yarn install
 script:
   - yarn test
